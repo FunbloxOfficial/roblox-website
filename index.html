@@ -3,72 +3,249 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Funblox - Your Gaming Hub</title>
+    <title>FunRoblox - Discover Games</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav class="navbar">
         <div class="container">
-            <div class="logo">Funblox</div>
+            <div class="logo">FunRoblox</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search games...">
+                <button>Search</button>
+            </div>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="games.html">Games</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html">Games</a></li>
+                <li><a href="avatar.html">Avatar Shop</a></li>
+                <li><a href="create.html">Create</a></li>
+                <li><a href="robux.html">Robux</a></li>
             </ul>
         </div>
     </nav>
 
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Welcome to Funblox</h1>
-            <p>Discover the best Funblox games and connect with players</p>
-            <button class="cta-button">Explore Games</button>
-        </div>
-    </header>
-
-    <main>
-        <section class="featured-games">
-            <div class="container">
-                <h2>Featured Games</h2>
-                <div class="games-grid">
-                    <div class="game-card">
-                        <img src="https://via.placeholder.com/300x200?text=Game+1" alt="Game 1">
-                        <h3>Adopt Me!</h3>
-                        <p>Adopt and care for virtual pets</p>
-                        <button>Learn More</button>
+    <main class="main-content">
+        <!-- Popular Section -->
+        <section class="games-section">
+            <div class="section-header">
+                <h2>Popular</h2>
+                <a href="#" class="see-all">See All ></a>
+            </div>
+            <div class="games-grid">
+                <div class="game-card">
+                    <div class="game-thumbnail" style="background-image: url('https://via.placeholder.com/300x300?text=Welcome+to+Bloxburg')"></div>
+                    <h3>Welcome to Bloxburg</h3>
+                    <div class="game-info">
+                        <span class="creator">👤 Creator</span>
+                        <span class="players">👥 4.2M</span>
                     </div>
-                    <div class="game-card">
-                        <img src="https://via.placeholder.com/300x200?text=Game+2" alt="Game 2">
-                        <h3>Bloxburg</h3>
-                        <p>Build your dream home and life</p>
-                        <button>Learn More</button>
+                </div>
+                <div class="game-card">
+                    <div class="game-thumbnail" style="background-image: url('https://via.placeholder.com/300x300?text=Adopt+Me')"></div>
+                    <h3>Adopt Me!</h3>
+                    <div class="game-info">
+                        <span class="creator">👤 Creator</span>
+                        <span class="players">👥 892.1K</span>
                     </div>
-                    <div class="game-card">
-                        <img src="https://via.placeholder.com/300x200?text=Game+3" alt="Game 3">
-                        <h3>Brookhaven</h3>
-                        <p>Roleplay and have fun with friends</p>
-                        <button>Learn More</button>
+                </div>
+                <div class="game-card">
+                    <div class="game-thumbnail" style="background-image: url('https://via.placeholder.com/300x300?text=Royale+High')"></div>
+                    <h3>Royale High</h3>
+                    <div class="game-info">
+                        <span class="creator">👤 Creator</span>
+                        <span class="players">👥 751.2K</span>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-thumbnail" style="background-image: url('https://via.placeholder.com/300x300?text=My+Restaurant')"></div>
+                    <h3>My Restaurant [CELEBRITY]</h3>
+                    <div class="game-info">
+                        <span class="creator">👤 Creator</span>
+                        <span class="players">👥 234.5K</span>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-thumbnail" style="background-image: url('https://via.placeholder.com/300x300?text=Arsenal')"></div>
+                    <h3>Arsenal</h3>
+                    <div class="game-info">
+                        <span class="creator">👤 Creator</span>
+                        <span class="players">👥 156.8K</span>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-thumbnail" style="background-image: url('https://via.placeholder.com/300x300?text=Jailbreak')"></div>
+                    <h3>Jailbreak [S]</h3>
+                    <div class="game-info">
+                        <span class="creator">👤 Creator</span>
+                        <span class="players">👥 342.1K</span>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-thumbnail" style="background-image: url('https://via.placeholder.com/300x300?text=Piggy')"></div>
+                    <h3>Piggy [ALPHA]</h3>
+                    <div class="game-info">
+                        <span class="creator">👤 Creator</span>
+                        <span class="players">👥 512.3K</span>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-thumbnail" style="background-image: url('https://via.placeholder.com/300x300?text=Skyblox')"></div>
+                    <h3>Skyblox [FIREWORKS]</h3>
+                    <div class="game-info">
+                        <span class="creator">👤 Creator</span>
+                        <span class="players">👥 289.4K</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="community">
-            <div class="container">
-                <h2>Join Our Community</h2>
-                <p>Connect with thousands of Funblox players</p>
-                <button class="cta-button">Join Now</button>
+        <!-- Recommended For You Section -->
+        <section class="games-section">
+            <div class="section-header">
+                <h2>Recommended For You</h2>
+                <a href="#" class="see-all">See All ></a>
+            </div>
+            <div class="games-grid">
+                <div class="game-card">
+                    <div class="game-thumbnail" style="background-image: url('https://via.placeholder.com/300x300?text=Adopt+Me+2')"></div>
+                    <h3>Adopt Me!</h3>
+                    <div class="game-info">
+                        <span class="creator">👤 Creator</span>
+                        <span class="players">👥 892.1K</span>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-thumbnail" style="background-image: url('https://via.placeholder.com/300x300?text=Piggy+2')"></div>
+                    <h3>Piggy [ALPHA]</h3>
+                    <div class="game-info">
+                        <span class="creator">👤 Creator</span>
+                        <span class="players">👥 512.3K</span>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-thumbnail" style="background-image: url('https://via.placeholder.com/300x300?text=Royale+High+2')"></div>
+                    <h3>Royale High</h3>
+                    <div class="game-info">
+                        <span class="creator">👤 Creator</span>
+                        <span class="players">👥 751.2K</span>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-thumbnail" style="background-image: url('https://via.placeholder.com/300x300?text=MeepCity')"></div>
+                    <h3>MeepCity</h3>
+                    <div class="game-info">
+                        <span class="creator">👤 Creator</span>
+                        <span class="players">👥 423.6K</span>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-thumbnail" style="background-image: url('https://via.placeholder.com/300x300?text=Tower+of+Hell')"></div>
+                    <h3>Tower of Hell</h3>
+                    <div class="game-info">
+                        <span class="creator">👤 Creator</span>
+                        <span class="players">👥 198.7K</span>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-thumbnail" style="background-image: url('https://via.placeholder.com/300x300?text=Murder+Mystery+2')"></div>
+                    <h3>Murder Mystery 2</h3>
+                    <div class="game-info">
+                        <span class="creator">👤 Creator</span>
+                        <span class="players">👥 267.9K</span>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-thumbnail" style="background-image: url('https://via.placeholder.com/300x300?text=Work+at+Pizza')"></div>
+                    <h3>Work at a Pizza Place</h3>
+                    <div class="game-info">
+                        <span class="creator">👤 Creator</span>
+                        <span class="players">👥 156.2K</span>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-thumbnail" style="background-image: url('https://via.placeholder.com/300x300?text=Brookhaven')"></div>
+                    <h3>Brookhaven 🏡 RP</h3>
+                    <div class="game-info">
+                        <span class="creator">👤 Creator</span>
+                        <span class="players">👥 534.8K</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Play Together Section -->
+        <section class="games-section">
+            <div class="section-header">
+                <h2>Play Together (10 Robux VIP Servers)</h2>
+                <a href="#" class="see-all">See All ></a>
+            </div>
+            <div class="games-grid">
+                <div class="game-card">
+                    <div class="game-thumbnail" style="background-image: url('https://via.placeholder.com/300x300?text=Hide+and+Seek')"></div>
+                    <h3>Hide and Seek Extreme</h3>
+                    <div class="game-info">
+                        <span class="creator">👤 Creator</span>
+                        <span class="players">👥 345.2K</span>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-thumbnail" style="background-image: url('https://via.placeholder.com/300x300?text=Speed+Run')"></div>
+                    <h3>Speed Run 4</h3>
+                    <div class="game-info">
+                        <span class="creator">👤 Creator</span>
+                        <span class="players">👥 278.4K</span>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-thumbnail" style="background-image: url('https://via.placeholder.com/300x300?text=Escape+Room')"></div>
+                    <h3>Escape Room</h3>
+                    <div class="game-info">
+                        <span class="creator">👤 Creator</span>
+                        <span class="players">👥 189.1K</span>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-thumbnail" style="background-image: url('https://via.placeholder.com/300x300?text=Obby+Challenge')"></div>
+                    <h3>Obby Challenge</h3>
+                    <div class="game-info">
+                        <span class="creator">👤 Creator</span>
+                        <span class="players">👥 412.5K</span>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-thumbnail" style="background-image: url('https://via.placeholder.com/300x300?text=Zombie+Attack')"></div>
+                    <h3>Zombie Attack</h3>
+                    <div class="game-info">
+                        <span class="creator">👤 Creator</span>
+                        <span class="players">👥 223.7K</span>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-thumbnail" style="background-image: url('https://via.placeholder.com/300x300?text=Cooking+Game')"></div>
+                    <h3>Cooking Simulator</h3>
+                    <div class="game-info">
+                        <span class="creator">👤 Creator</span>
+                        <span class="players">👥 156.3K</span>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-thumbnail" style="background-image: url('https://via.placeholder.com/300x300?text=Pet+Simulator')"></div>
+                    <h3>Pet Simulator X</h3>
+                    <div class="game-info">
+                        <span class="creator">👤 Creator</span>
+                        <span class="players">👥 678.9K</span>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-thumbnail" style="background-image: url('https://via.placeholder.com/300x300?text=Ro+Chat')"></div>
+                    <h3>Ro Chat</h3>
+                    <div class="game-info">
+                        <span class="creator">👤 Creator</span>
+                        <span class="players">👥 334.6K</span>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Funblox. All rights reserved.</p>
-            <p>This is a fan site and is not affiliated with Roblox Corporation.</p>
-        </div>
-    </footer>
 
     <script src="script.js"></script>
 </body>
