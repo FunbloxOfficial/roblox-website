@@ -104,6 +104,15 @@ body {
 .signup-link {
     color: #e74c3c;
     font-weight: 700;
+    padding: 0.5rem 1rem;
+    border: 2px solid #e74c3c;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.signup-link:hover {
+    background-color: #e74c3c;
+    color: white;
 }
 
 /* ===== MAIN CONTENT ===== */
