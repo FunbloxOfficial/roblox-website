@@ -24,4 +24,4 @@ joinButton.addEventListener('click', function() {
 });
 
 // Mobile menu toggle (if you add a mobile menu later)
-console.log('Funblox website loaded successfully!');
+console.log('FunRoblox website loaded successfully!');
