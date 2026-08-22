@@ -33,12 +33,14 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     animation: fadeIn 0.3s ease;
+    overflow-y: auto;
+    padding: 2rem 0;
 }
 
 .modal.show {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 @keyframes fadeIn {
@@ -53,12 +55,13 @@
 /* Modal Content */
 .modal-content {
     background-color: white;
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 8px;
     width: 90%;
-    max-width: 450px;
+    max-width: 420px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
     animation: slideUp 0.3s ease;
+    margin-top: 2rem;
 }
 
 @keyframes slideUp {
@@ -76,23 +79,24 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     border-bottom: 2px solid #e74c3c;
-    padding-bottom: 1rem;
+    padding-bottom: 0.75rem;
 }
 
 .modal-header h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: #333;
     margin: 0;
 }
 
 .close {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bold;
     color: #999;
     cursor: pointer;
     transition: color 0.3s;
+    line-height: 1;
 }
 
 .close:hover {
@@ -103,28 +107,28 @@
 .signup-form {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.3rem;
 }
 
 .form-group label {
     font-weight: 600;
     color: #333;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
 }
 
 .form-group input[type="text"],
 .form-group input[type="password"],
 .form-group input[type="number"] {
-    padding: 0.75rem;
+    padding: 0.6rem;
     border: 2px solid #ddd;
     border-radius: 4px;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     transition: border-color 0.3s;
     font-family: inherit;
 }
@@ -138,15 +142,15 @@
 /* ===== BIRTHDAY INPUTS ===== */
 .birthday-inputs {
     display: flex;
-    gap: 0.75rem;
+    gap: 0.5rem;
 }
 
 .birthday-inputs input {
     flex: 1;
-    padding: 0.75rem;
+    padding: 0.6rem;
     border: 2px solid #ddd;
     border-radius: 4px;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     text-align: center;
     transition: border-color 0.3s;
 }
@@ -177,11 +181,12 @@
 .gender-label {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.4rem;
     cursor: pointer;
     font-weight: 500;
     color: #333;
     transition: color 0.3s;
+    font-size: 0.9rem;
 }
 
 .gender-label:hover {
@@ -190,22 +195,23 @@
 
 .gender-label input[type="radio"] {
     cursor: pointer;
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     accent-color: #e74c3c;
 }
 
 .gender-label span {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
 }
 
 /* ===== ERROR MESSAGES ===== */
 .error-message {
     color: #e74c3c;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     font-weight: 600;
-    min-height: 1.2rem;
+    min-height: 1rem;
     display: block;
+    margin-top: -0.2rem;
 }
 
 /* Show error state on input */
@@ -216,8 +222,8 @@
 
 /* ===== SUBMIT BUTTON ===== */
 .submit-btn {
-    padding: 0.9rem;
-    font-size: 1rem;
+    padding: 0.75rem;
+    font-size: 0.95rem;
     font-weight: 600;
     background-color: #e74c3c;
     color: white;
@@ -225,7 +231,7 @@
     border-radius: 4px;
     cursor: pointer;
     transition: all 0.3s;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 }
 
 .submit-btn:hover:not(:disabled) {
@@ -244,19 +250,20 @@
 @media (max-width: 600px) {
     .modal-content {
         width: 95%;
-        padding: 1.5rem;
+        padding: 1.2rem;
+        max-width: 100%;
     }
 
     .modal-header h2 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .birthday-inputs {
-        gap: 0.5rem;
+        gap: 0.4rem;
     }
 
     .birthday-inputs input {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
 
     .gender-options {
