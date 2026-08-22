@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FunRoblox - Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">FunRoblox</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search games...">
+                <button>Search</button>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Games</a></li>
+                <li><a href="avatar.html">Avatar Shop</a></li>
+                <li><a href="create.html">Create</a></li>
+                <li><a href="robux.html">Robux</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="signup-button-container">
+        <button class="signup-btn" id="openSignupBtn">Sign Up</button>
+    </div>
+
+    <!-- Sign Up Modal -->
+    <div class="modal" id="signupModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Create Your Account</h2>
+                <span class="close" id="closeSignupBtn">&times;</span>
+            </div>
+
+            <form class="signup-form" id="signupForm">
+                <!-- Username Field -->
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input 
+                        type="text" 
+                        id="username" 
+                        name="username" 
+                        placeholder="Choose a username"
+                        required
+                    >
+                    <span class="error-message" id="usernameError"></span>
+                </div>
+
+                <!-- Password Field -->
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        name="password" 
+                        placeholder="Enter your password"
+                        required
+                    >
+                    <span class="error-message" id="passwordError"></span>
+                </div>
+
+                <!-- Confirm Password Field -->
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input 
+                        type="password" 
+                        id="confirmPassword" 
+                        name="confirmPassword" 
+                        placeholder="Confirm your password"
+                        required
+                    >
+                    <span class="error-message" id="confirmPasswordError"></span>
+                </div>
+
+                <!-- Birthday Field -->
+                <div class="form-group">
+                    <label>Birthday</label>
+                    <div class="birthday-inputs">
+                        <input 
+                            type="number" 
+                            id="month" 
+                            name="month" 
+                            placeholder="MM" 
+                            min="1" 
+                            max="12"
+                            required
+                        >
+                        <input 
+                            type="number" 
+                            id="day" 
+                            name="day" 
+                            placeholder="DD" 
+                            min="1" 
+                            max="31"
+                            required
+                        >
+                        <input 
+                            type="number" 
+                            id="year" 
+                            name="year" 
+                            placeholder="YYYY" 
+                            min="1900" 
+                            max="2024"
+                            required
+                        >
+                    </div>
+                    <span class="error-message" id="birthdayError"></span>
+                </div>
+
+                <!-- Gender Field -->
+                <div class="form-group">
+                    <label>Gender</label>
+                    <div class="gender-options">
+                        <label class="gender-label">
+                            <input type="radio" name="gender" value="boy" required>
+                            <span>Boy</span>
+                        </label>
+                        <label class="gender-label">
+                            <input type="radio" name="gender" value="girl" required>
+                            <span>Girl</span>
+                        </label>
+                    </div>
+                    <span class="error-message" id="genderError"></span>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="signup.js"></script>
+</body>
+</html>
