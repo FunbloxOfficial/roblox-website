@@ -1,2 +1,2 @@
 # Funblox.com
-My personal Roblox fan website
+An exciting journey full of games
