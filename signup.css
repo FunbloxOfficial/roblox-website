@@ -1,0 +1,265 @@
+/* ===== SIGNUP MODAL STYLES ===== */
+
+.signup-button-container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.signup-btn {
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.signup-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Modal Overlay */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.3s ease;
+}
+
+.modal.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 450px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #e74c3c;
+    padding-bottom: 1rem;
+}
+
+.modal-header h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin: 0;
+}
+
+.close {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #999;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close:hover {
+    color: #e74c3c;
+}
+
+/* ===== FORM STYLES ===== */
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group input[type="number"] {
+    padding: 0.75rem;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    transition: border-color 0.3s;
+    font-family: inherit;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #e74c3c;
+    box-shadow: 0 0 5px rgba(231, 76, 60, 0.2);
+}
+
+/* ===== BIRTHDAY INPUTS ===== */
+.birthday-inputs {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.birthday-inputs input {
+    flex: 1;
+    padding: 0.75rem;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    text-align: center;
+    transition: border-color 0.3s;
+}
+
+.birthday-inputs input:focus {
+    outline: none;
+    border-color: #e74c3c;
+    box-shadow: 0 0 5px rgba(231, 76, 60, 0.2);
+}
+
+/* Remove number spinner arrows */
+.birthday-inputs input[type="number"]::-webkit-outer-spin-button,
+.birthday-inputs input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.birthday-inputs input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* ===== GENDER OPTIONS ===== */
+.gender-options {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.gender-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-weight: 500;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.gender-label:hover {
+    color: #e74c3c;
+}
+
+.gender-label input[type="radio"] {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    accent-color: #e74c3c;
+}
+
+.gender-label span {
+    font-size: 0.95rem;
+}
+
+/* ===== ERROR MESSAGES ===== */
+.error-message {
+    color: #e74c3c;
+    font-size: 0.85rem;
+    font-weight: 600;
+    min-height: 1.2rem;
+    display: block;
+}
+
+/* Show error state on input */
+.form-group input.error {
+    border-color: #e74c3c;
+    background-color: #fff5f5;
+}
+
+/* ===== SUBMIT BUTTON ===== */
+.submit-btn {
+    padding: 0.9rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 1rem;
+}
+
+.submit-btn:hover:not(:disabled) {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(231, 76, 60, 0.3);
+}
+
+.submit-btn:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 600px) {
+    .modal-content {
+        width: 95%;
+        padding: 1.5rem;
+    }
+
+    .modal-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .birthday-inputs {
+        gap: 0.5rem;
+    }
+
+    .birthday-inputs input {
+        font-size: 0.9rem;
+    }
+
+    .gender-options {
+        gap: 1rem;
+    }
+}
